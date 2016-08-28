@@ -160,7 +160,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../assets/bg.jpg) no-repeat center center scroll;
+    background: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -190,7 +190,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../assets/callout.jpg) no-repeat center center scroll;
+    background: url(../assets   /callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -253,3 +253,58 @@ footer {
   bottom: 5px;
   right: 5px;
 }
+
+/* Video Player */
+
+.carousel video {
+    width: auto;
+    max-width:100%;
+    height: 100vh;
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image:none;
+}
+
+.carousel-control .fa {
+    position: absolute;
+    top: 50%;
+    font-size: 34px
+}
+
+.carousel-caption {
+    position: relative;
+    margin: 0 auto;
+    bottom: 40px;
+    left: 80%;
+    z-index: 10;
+    padding: 10px;
+    width: 180px;
+    color: #000;
+    text-align: center;
+    background: #ffffff;
+    text-shadow: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.carousel-caption h1 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 0 5px 0;
+    font-weight: 400;
+    color: #555;
+}
+
+.carousel-caption p {
+    font-size: 8px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #999;
+    letter-spacing: 1px;
+}
+
