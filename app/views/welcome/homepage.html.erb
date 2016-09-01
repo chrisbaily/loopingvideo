@@ -43,8 +43,7 @@
                 <a href="#top" onclick=$("#menu-close").click();>Moving Paintings</a>
                     <ul>
                         <li ><a href="#portfolio"  data-target="#carousel" data-slide-to="0" onclick=$("#menu-close").click();>Sisters</a></li>
-                        <li ><a href="#top" data-target="#carousel" data-slide-to="1" onclick=$("#menu-close").click();>Daydreaming</a></li>
-                    </ul>
+                        <li ><a href="#top" data-target="#carousel" data-slide-to="1" onclick=$("#menu-close").click();>Daydreaming</a></li> 
                         <li ><a href="#portfolio"  data-target="#carousel" data-slide-to="2" onclick=$("#menu-close").click();>Honeymoon</a></li>
                         <li ><a href="#top" data-target="#carousel" data-slide-to="3" onclick=$("#menu-close").click();>Rejoicing</a></li>
                     </ul>
@@ -336,12 +335,13 @@ Chris Baily was born in 1981 outside of Washington DC, and now lives and works i
         var slideRmvSlash = slide.replace('/','');
         slide = parseInt(slideRmvSlash);
     }
-
-    $("#carousel").carousel( slide );
-
+    goToSlide(slide);
     
     });
 
+    function goToSlide(slide) {
+       $("#carousel").carousel(slide);
+    }
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
