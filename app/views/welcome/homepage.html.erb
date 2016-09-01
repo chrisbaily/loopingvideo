@@ -43,7 +43,10 @@
                 <a href="#top" onclick=$("#menu-close").click();>Moving Paintings</a>
                     <ul>
                         <li ><a href="#portfolio"  data-target="#carousel" data-slide-to="0" onclick=$("#menu-close").click();>Sisters</a></li>
-                        <li ><a href="#top" data-target="#carousel" data-slide-to="1" onclick=$("#menu-close").click();>Honeymoon</a></li>
+                        <li ><a href="#top" data-target="#carousel" data-slide-to="1" onclick=$("#menu-close").click();>Daydreaming</a></li>
+                    </ul>
+                        <li ><a href="#portfolio"  data-target="#carousel" data-slide-to="2" onclick=$("#menu-close").click();>Honeymoon</a></li>
+                        <li ><a href="#top" data-target="#carousel" data-slide-to="3" onclick=$("#menu-close").click();>Rejoicing</a></li>
                     </ul>
             </li>
 
@@ -54,16 +57,13 @@
                 <a href="#about" onclick=$("#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#exhibitions" onclick=$("#menu-close").click();>Contact</a>
+                <a href="#exhibitions" onclick=$("#menu-close").click();>Exhibitions</a>
             </li>
             <li>
                 <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
             </li>
             <li>
-                <a href="http://art.chrisbaily.com" onclick=$("#menu-close").click();>Store</a>
-            </li>
-            <li>
-                <a href="http://ux.chrisbaily.com" onclick=$("#menu-close").click();>UX Design</a>
+                <a href="http://art.chrisbaily.com" onclick=$("#menu-close").click();>Collections</a>
             </li>
         </ul>
     </nav>
@@ -301,6 +301,8 @@ Chris Baily was born in 1981 outside of Washington DC, and now lives and works i
 
     <!-- Custom Theme JavaScript -->
     <script>
+
+    // Pause and Play video when in viewport
     $(window).scroll(function() {
         $('video').each(function(){
             if ($(this).is(":in-viewport")) {
@@ -319,6 +321,27 @@ Chris Baily was born in 1981 outside of Washington DC, and now lives and works i
             }
         })
     });
+
+    // Direct Links to Carousel 
+    
+
+    $( document ).ready(function() {
+
+
+    var url = window.location.href;
+    var slide = url.substring(url.lastIndexOf('/')+1); // 4
+
+    // Remove the trailing slash if necessary
+    if( slide.indexOf("/") > -1 ) { 
+        var slideRmvSlash = slide.replace('/','');
+        slide = parseInt(slideRmvSlash);
+    }
+
+    $("#carousel").carousel( slide );
+
+    
+    });
+
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
