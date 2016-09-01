@@ -21,7 +21,6 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-<<<<<<< HEAD
 h1,
 h2,
 h3,
@@ -42,8 +41,6 @@ h3 {
     font-size: 22px;
 }
 
-=======
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -101,11 +98,7 @@ hr.small {
     height: 100%;
     transform: translateX(250px);
     overflow-y: auto;
-<<<<<<< HEAD
     background: rgba(0,0,0,0.8);
-=======
-    background: #222;
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -120,11 +113,8 @@ hr.small {
     margin: 0;
     padding: 0;
     list-style: none;
-<<<<<<< HEAD
     letter-spacing: 1px;
     text-transform: uppercase;
-=======
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
 }
 
 .sidebar-nav li {
@@ -132,13 +122,10 @@ hr.small {
     line-height: 40px;
 }
 
-<<<<<<< HEAD
 .sidebar-nav ul li ul li {
     list-style: none;
 }
 
-=======
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
@@ -158,16 +145,11 @@ hr.small {
 
 .sidebar-nav > .sidebar-brand {
     height: 55px;
-<<<<<<< HEAD
     font-size: 14px;
     line-height: 55px;
     background: #000;
     color: #efefef;
     letter-spacing: 2px;
-=======
-    font-size: 18px;
-    line-height: 55px;
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -237,11 +219,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-<<<<<<< HEAD
     background: url(callout.jpg) no-repeat center center scroll;
-=======
-    background: url(../assets   /callout.jpg) no-repeat center center scroll;
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -258,13 +236,8 @@ hr.small {
     margin-bottom: 30px;
 }
 
-<<<<<<< HEAD
 .img-process {
     margin: 10px 0 10px;
-=======
-.img-portfolio {
-    margin: 0 auto;
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
 }
 
 .img-portfolio:hover {
@@ -313,22 +286,12 @@ footer {
 /* Video Player */
 
 .carousel video {
-<<<<<<< HEAD
     width:100%;
     height:85vh;
 }
 
 .carousel-control {
     opacity: 0.4;
-=======
-    width: auto;
-    max-width:100%;
-    height: 100vh;
-}
-
-.carousel-control {
-    opacity: 0;
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
 }
 
 .carousel-control.right, .carousel-control.left {
@@ -337,36 +300,12 @@ footer {
 
 .carousel-control .fa {
     position: absolute;
-<<<<<<< HEAD
     top: 40%;
     font-size: 34px
 }
 
 .carousel-caption h1 {
     font-size: 14px;
-=======
-    top: 50%;
-    font-size: 34px
-}
-
-.carousel-caption {
-    position: relative;
-    margin: 0 auto;
-    bottom: 40px;
-    left: 80%;
-    z-index: 10;
-    padding: 10px;
-    width: 180px;
-    color: #000;
-    text-align: center;
-    background: #ffffff;
-    text-shadow: none;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-}
-
-.carousel-caption h1 {
-    font-size: 13px;
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0 0 5px 0;
@@ -375,18 +314,13 @@ footer {
 }
 
 .carousel-caption p {
-<<<<<<< HEAD
     font-size: 9px;
-=======
-    font-size: 8px;
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
     text-transform: uppercase;
     margin: 0;
     color: #999;
     letter-spacing: 1px;
 }
 
-<<<<<<< HEAD
 .carousel-caption {
     position: relative;
     right: auto;
@@ -427,5 +361,3 @@ footer {
     }
 }
 
-=======
->>>>>>> 1e728940470c512b19367d46d8d63cd384b896f3
