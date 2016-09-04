@@ -81,10 +81,9 @@
       <div class="carousel-inner" role="listbox">
         <div class="item active">
              <div align="center">
-                <video autoplay muted loop preload="auto">
-                     <source src="http://lightfieldcreative.com/video/sisters.mp4" type="video/mp4">
-                     Your browser does not support the video tag.
-                </video>
+                <div id="video">
+                     <iframe src="https://player.vimeo.com/video/181397739?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;color=555" width="2160px" height="1080px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
             </div>
             <div class="carousel-caption">
                 <h1>Sisters</h1>
@@ -93,10 +92,9 @@
         </div>
         <div class="item">
             <div align="center">
-                <video autoplay muted loop preload="auto">
-                     <source src="http://lightfieldcreative.com/video/daydreaming.mp4" type="video/mp4">
-                     Your browser does not support the video tag.
-                </video>
+               <div id="video">
+                     <iframe src="https://player.vimeo.com/video/181399823?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;color=555" width="1920px" height="576px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
             </div>
             <div class="carousel-caption">
                 <h1>Daydreaming</h1>
@@ -105,10 +103,9 @@
         </div>
         <div class="item">
             <div align="center">
-                <video autoplay muted loop preload="auto">
-                     <source src="http://lightfieldcreative.com/video/paris.mp4" type="video/mp4">
-                     Your browser does not support the video tag.
-                </video>
+               <div id="video">
+                     <iframe src="https://player.vimeo.com/video/181399826?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;color=555" width="1920px" height="900px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
             </div>
             <div class="carousel-caption">
                 <h1>Paris</h1>
@@ -117,10 +114,9 @@
         </div>         
         <div class="item">
             <div align="center">
-                <video autoplay muted loop preload="auto">
-                     <source src="http://lightfieldcreative.com/video/honeymoon.mp4" type="video/mp4">
-                     Your browser does not support the video tag.
-                </video>
+               <div id="video">
+                     <iframe src="https://player.vimeo.com/video/181399827?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;color=555" width="1536px" height="2304px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
             </div>
             <div class="carousel-caption">
                 <h1>Honeymoon</h1>
@@ -129,10 +125,9 @@
         </div>
         <div class="item">
             <div align="center">
-                <video autoplay muted loop preload="auto">
-                     <source src="http://lightfieldcreative.com/video/rejoicing.mp4" type="video/mp4">
-                     Your browser does not support the video tag.
-                </video>
+               <div id="video">
+                     <iframe src="https://player.vimeo.com/video/181399828?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;color=555" width="1920px" height="960px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
             </div>
             <div class="carousel-caption">
                 <h1>Rejoicing</h1>
@@ -310,30 +305,9 @@ Chris Baily was born in 1981 outside of Washington DC, and now lives and works i
 
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/bootstrap.min.js"></script>
-    <script src="assets/isInViewport.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
-
-    // Pause and Play video when in viewport
-    $(window).scroll(function() {
-        $('video').each(function(){
-            if ($(this).is(":in-viewport")) {
-                $(this)[0].play();
-            } else {
-                $(this)[0].pause();
-            }
-        })
-    });
-    $('#carousel').on('slid.bs.carousel', function (e) {
-            $('video').each(function(){
-            if ($(this).is(":in-viewport")) {
-                $(this)[0].play();
-            } else {
-                $(this)[0].pause();
-            }
-        })
-    });
 
     // Direct Links to Carousel 
 
